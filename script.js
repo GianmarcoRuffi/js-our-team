@@ -4,17 +4,57 @@
 // BONUS:
 // Utilizzare gli input presenti nella pagina per permettere all'utente di aggiungere nuovi membri del team: cliccando sul pulsante "add" viene creato un nuovo oggetto, il quale viene inserito nell'array iniziale e viene stampata una nuova card con tutte le informazioni inserite dall'utente.
 
-const member = {
+let memberOne = {
   picture: "testpicture", //image
   firstName: "testFirstName", //first name
   lastName: "testLastName", // second name
   role: "testRole", // role
 };
 
-console.log(member);
+let memberTwo = {
+  picture: "testpicture", //image
+  firstName: "testFirstName", //first name
+  lastName: "testLastName", // second name
+  role: "testRole", // role
+};
+
+let memberThree = {
+  picture: "testpicture", //image
+  firstName: "testFirstName", //first name
+  lastName: "testLastName", // second name
+  role: "testRole", // role
+};
+
+let memberFour = {
+  picture: "testpicture", //image
+  firstName: "testFirstName", //first name
+  lastName: "testLastName", // second name
+  role: "testRole", // role
+};
+
+let memberFive = {
+  picture: "testpicture", //image
+  firstName: "testFirstName", //first name
+  lastName: "testLastName", // second name
+  role: "testRole", // role
+};
+
+let memberSix = {
+  picture: "testpicture", //image
+  firstName: "testFirstName", //first name
+  lastName: "testLastName", // second name
+  role: "testRole", // role
+};
 
 let teamMembers = [];
 
-teamMembers.push((member = { picture, firstName, lastName }));
+teamMembers.push(
+  memberOne,
+  memberTwo,
+  memberThree,
+  memberFour,
+  memberFive,
+  memberSix
+);
 
 console.log(teamMembers);
