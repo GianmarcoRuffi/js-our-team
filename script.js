@@ -51,7 +51,7 @@ teamMembers.push(
 
 console.log(teamMembers);
 
-document.querySelector(".team-card").innerHTML = teamMembers;
+document.querySelector(".team-card").innerHTML;
 
 for (i = 0; i < teamMembers.length; i++) {
   `
