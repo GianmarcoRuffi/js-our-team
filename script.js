@@ -42,7 +42,7 @@ teamMembers.push(
     role: "Developer", // role
   },
   {
-    picture: "barbara-ramos-graphic-designer.jpg", //image
+    picture: "img/barbara-ramos-graphic-designer.jpg", //image
     firstName: "Barbara", //first name
     lastName: "Ramos", // second name
     role: "Graphic Designer", // role
@@ -51,19 +51,21 @@ teamMembers.push(
 
 console.log(teamMembers);
 
-document.querySelector(".team-card").innerHTML;
+document.querySelector(".team-container").innerHTML;
 
 for (i = 0; i < teamMembers.length; i++) {
-  document.querySelector(".team-card").innerHTML = `
+  document.querySelector(".team-container").innerHTML += `
+  <div class="team-card">
   <div class="card-image">
     <img
-      src=${teamMembers.picture}
+      src="${teamMembers[i].picture}"
       alt=""
     />
   </div>
   <div class="card-text">
-    <h3>${teamMembers.firstName} ${teamMembers.lastName}</h3>
-    <p>${teamMembers.role}</p>
+    <h3>${teamMembers[i].firstName} ${teamMembers[i].lastName}</h3>
+    <p>${teamMembers[i].role}</p>
+  </div>
   </div>
 `;
 }
