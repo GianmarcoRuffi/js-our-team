@@ -54,7 +54,7 @@ console.log(teamMembers);
 document.querySelector(".team-card").innerHTML;
 
 for (i = 0; i < teamMembers.length; i++) {
-  `
+  document.querySelector(".team-card").innerHTML = `
   <div class="card-image">
     <img
       src=${teamMembers.picture}
