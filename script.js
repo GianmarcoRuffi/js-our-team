@@ -14,3 +14,7 @@ const member = {
 console.log(member);
 
 let teamMembers = [];
+
+teamMembers.push((member = { picture, firstName, lastName }));
+
+console.log(teamMembers);
