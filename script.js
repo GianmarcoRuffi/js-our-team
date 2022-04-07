@@ -6,57 +6,47 @@
 
 // Esempio card
 
-let memberOne = {
-  picture: "img/wayne-barnett-founder-ceo.jpg", //image
-  firstName: "Wayne", //first name
-  lastName: "Barnett", // second name
-  role: "Founder & CEO", // role
-};
-
-let memberTwo = {
-  picture: "img/angela-caroll-chief-editor.jpg", //image
-  firstName: "Angela", //first name
-  lastName: "Caroll", // second name
-  role: "Chief Editor", // role
-};
-
-let memberThree = {
-  picture: "img/walter-gordon-office-manager.jpg", //image
-  firstName: "Walter", //first name
-  lastName: "Gordon", // second name
-  role: "Office Manager", // role
-};
-
-let memberFour = {
-  picture: "img/angela-lopez-social-media-manager.jpg", //image
-  firstName: "Angela", //first name
-  lastName: "Lopez", // second name
-  role: "Social media manager", // role
-};
-
-let memberFive = {
-  picture: "img/scott-estrada-developer.jpg", //image
-  firstName: "Scott", //first name
-  lastName: "Estrada", // second name
-  role: "Developer", // role
-};
-
-let memberSix = {
-  picture: "barbara-ramos-graphic-designer.jpg", //image
-  firstName: "Barbara", //first name
-  lastName: "Ramos", // second name
-  role: "Graphic Designer", // role
-};
-
 let teamMembers = [];
 
 teamMembers.push(
-  memberOne,
-  memberTwo,
-  memberThree,
-  memberFour,
-  memberFive,
-  memberSix
+  {
+    picture: "img/wayne-barnett-founder-ceo.jpg", //image
+    firstName: "Wayne", //first name
+    lastName: "Barnett", // second name
+    role: "Founder & CEO", // role
+  },
+
+  {
+    picture: "img/angela-caroll-chief-editor.jpg", //image
+    firstName: "Angela", //first name
+    lastName: "Caroll", // second name
+    role: "Chief Editor", // role
+  },
+
+  {
+    picture: "img/walter-gordon-office-manager.jpg", //image
+    firstName: "Walter", //first name
+    lastName: "Gordon", // second name
+    role: "Office Manager", // role
+  },
+  {
+    picture: "img/angela-lopez-social-media-manager.jpg", //image
+    firstName: "Angela", //first name
+    lastName: "Lopez", // second name
+    role: "Social media manager", // role
+  },
+  {
+    picture: "img/scott-estrada-developer.jpg", //image
+    firstName: "Scott", //first name
+    lastName: "Estrada", // second name
+    role: "Developer", // role
+  },
+  {
+    picture: "barbara-ramos-graphic-designer.jpg", //image
+    firstName: "Barbara", //first name
+    lastName: "Ramos", // second name
+    role: "Graphic Designer", // role
+  }
 );
 
 console.log(teamMembers);
@@ -67,13 +57,13 @@ for (i = 0; i < teamMembers.length; i++) {
   `
   <div class="card-image">
     <img
-      src=${picture}
+      src=${teamMembers.picture}
       alt=""
     />
   </div>
   <div class="card-text">
-    <h3>${firstName} ${lastName}</h3>
-    <p>${role}</p>
+    <h3>${teamMembers.firstName} ${teamMembers.lastName}</h3>
+    <p>${teamMembers.role}</p>
   </div>
 `;
 }
