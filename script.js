@@ -4,8 +4,21 @@
 // BONUS:
 // Utilizzare gli input presenti nella pagina per permettere all'utente di aggiungere nuovi membri del team: cliccando sul pulsante "add" viene creato un nuovo oggetto, il quale viene inserito nell'array iniziale e viene stampata una nuova card con tutte le informazioni inserite dall'utente.
 
+// Esempio card
+
+//  <div class="card-image">
+//               <img
+//                 src="img/wayne-barnett-founder-ceo.jpg"
+//                 alt="Wayne Barnett"
+//               />
+//             </div>
+//             <div class="card-text">
+//               <h3>Wayne Barnett</h3>
+//               <p>Founder & CEO</p>
+//             </div>
+
 let memberOne = {
-  picture: "testpicture", //image
+  picture: "testPicture", //image
   firstName: "testFirstName", //first name
   lastName: "testLastName", // second name
   role: "testRole", // role
