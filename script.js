@@ -6,57 +6,46 @@
 
 // Esempio card
 
-//  <div class="card-image">
-//               <img
-//                 src="img/wayne-barnett-founder-ceo.jpg"
-//                 alt="Wayne Barnett"
-//               />
-//             </div>
-//             <div class="card-text">
-//               <h3>Wayne Barnett</h3>
-//               <p>Founder & CEO</p>
-//             </div>
-
 let memberOne = {
-  picture: "testPicture", //image
-  firstName: "testFirstName", //first name
-  lastName: "testLastName", // second name
-  role: "testRole", // role
+  picture: "img/wayne-barnett-founder-ceo.jpg", //image
+  firstName: "Wayne", //first name
+  lastName: "Barnett", // second name
+  role: "Founder & CEO", // role
 };
 
 let memberTwo = {
-  picture: "testpicture", //image
-  firstName: "testFirstName", //first name
-  lastName: "testLastName", // second name
-  role: "testRole", // role
+  picture: "img/angela-caroll-chief-editor.jpg", //image
+  firstName: "Angela", //first name
+  lastName: "Caroll", // second name
+  role: "Chief Editor", // role
 };
 
 let memberThree = {
-  picture: "testpicture", //image
-  firstName: "testFirstName", //first name
-  lastName: "testLastName", // second name
-  role: "testRole", // role
+  picture: "img/walter-gordon-office-manager.jpg", //image
+  firstName: "Walter", //first name
+  lastName: "Gordon", // second name
+  role: "Office Manager", // role
 };
 
 let memberFour = {
-  picture: "testpicture", //image
-  firstName: "testFirstName", //first name
-  lastName: "testLastName", // second name
-  role: "testRole", // role
+  picture: "img/angela-lopez-social-media-manager.jpg", //image
+  firstName: "Angela", //first name
+  lastName: "Lopez", // second name
+  role: "Social media manager", // role
 };
 
 let memberFive = {
-  picture: "testpicture", //image
-  firstName: "testFirstName", //first name
-  lastName: "testLastName", // second name
-  role: "testRole", // role
+  picture: "img/scott-estrada-developer.jpg", //image
+  firstName: "Scott", //first name
+  lastName: "Estrada", // second name
+  role: "Developer", // role
 };
 
 let memberSix = {
-  picture: "testpicture", //image
-  firstName: "testFirstName", //first name
-  lastName: "testLastName", // second name
-  role: "testRole", // role
+  picture: "barbara-ramos-graphic-designer.jpg", //image
+  firstName: "Barbara", //first name
+  lastName: "Ramos", // second name
+  role: "Graphic Designer", // role
 };
 
 let teamMembers = [];
@@ -71,3 +60,20 @@ teamMembers.push(
 );
 
 console.log(teamMembers);
+
+document.querySelector(".team-card").innerHTML = teamMembers;
+
+for (i = 0; i < teamMembers.length; i++) {
+  `
+  <div class="card-image">
+    <img
+      src="img/wayne-barnett-founder-ceo.jpg"
+      alt="Wayne Barnett"
+    />
+  </div>
+  <div class="card-text">
+    <h3>Wayne Barnett</h3>
+    <p>Founder & CEO</p>
+  </div>
+`;
+}
