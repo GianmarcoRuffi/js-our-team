@@ -67,13 +67,13 @@ for (i = 0; i < teamMembers.length; i++) {
   `
   <div class="card-image">
     <img
-      src="img/wayne-barnett-founder-ceo.jpg"
-      alt="Wayne Barnett"
+      src=${picture}
+      alt=""
     />
   </div>
   <div class="card-text">
-    <h3>Wayne Barnett</h3>
-    <p>Founder & CEO</p>
+    <h3>${firstName} ${lastName}</h3>
+    <p>${role}</p>
   </div>
 `;
 }
