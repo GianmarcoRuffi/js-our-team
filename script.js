@@ -4,4 +4,13 @@
 // BONUS:
 // Utilizzare gli input presenti nella pagina per permettere all'utente di aggiungere nuovi membri del team: cliccando sul pulsante "add" viene creato un nuovo oggetto, il quale viene inserito nell'array iniziale e viene stampata una nuova card con tutte le informazioni inserite dall'utente.
 
+const member = {
+  picture: "testpicture", //image
+  firstName: "testFirstName", //first name
+  lastName: "testLastName", // second name
+  role: "testRole", // role
+};
+
+console.log(member);
+
 let teamMembers = [];
